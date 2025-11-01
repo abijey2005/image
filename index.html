@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            gap: 10px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="aa">
+  <img src="" id="myimg" alt="image" width="300" height="200">
+  <button onclick="ar()">Show Images</button>
+  </div>
+
+  <script>
+  
+    let a = [
+      "https://picsum.photos/536/354?random=1",
+      "https://picsum.photos/536/354?random=2",
+      "https://picsum.photos/536/354?random=3",
+      "https://picsum.photos/536/354?random=4"
+    ];
+
+    let index = -1;
+
+    function ar() {
+      index++;
+      if (index >= a.length) {
+        index = 0;
+      }
+      document.getElementById("myimg").src = a[index];
+    }
+  </script>
+</body>
+
+    
+</body>
+    
+
+</html>
